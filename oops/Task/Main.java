@@ -1,11 +1,16 @@
-import java.util.Scanner;public class Main {
+import java.util.Scanner;
+
+public class Main {
     public static void main(String[] args) {        // ParentClass p= new Child1();
         // String ans=p.printFun("I am the first child!");
-        // System.out.println(ans);        Scanner sc =new Scanner(System.in);
+        // System.out.println(ans);      
+          Scanner sc =new Scanner(System.in);
         // System.out.println("Type 1 to print Header");
         // System.out.println("Type 2 to print Middle");
         // System.out.println("Type 3 to print Footer");
-        // System.out.println("Type 0 to print Exit");        int input ;        do{
+        // System.out.println("Type 0 to print Exit");      
+        
+        int input ;        do{
             input = sc.nextInt();
             switch (input) {
                 case 1:
@@ -34,19 +39,6 @@ import java.util.Scanner;public class Main {
     }
 }
 
-abstract class ParentClass{  
-      abstract void print(String s);  
-      
-    public void printFun(String s)
-    {
-        System.out.println("Header");
-        print(s);
-        System.out.println("Footer");    }
-}
 
-public class Child1 extends ParentClass {
-    public void print(String s)
-    {
-        System.out.println(s);
-    }
-}
+
+
